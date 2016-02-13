@@ -5,17 +5,18 @@
  */
 package tarea6;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SAMSUNG
  */
 public class Tarea6 {
-
+    public static ArrayList< arma > armasSistema = new ArrayList();
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola mundo");
     }
     
 }
