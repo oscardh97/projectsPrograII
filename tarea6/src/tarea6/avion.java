@@ -48,7 +48,11 @@ public abstract class avion {
         if( estado.equals("Estacionado") ){
             estado = "Preparado";
         }else{
-//            Aqui pone la excepcion
+            try{
+                validar(this.estado);
+            }catch(miExcepcion e){
+                e.getMessage();
+            }
         }
     }
     @Override
@@ -56,5 +60,11 @@ public abstract class avion {
         return "avion{" + "capacCombus=" + capacCombus + ", nombre=" + nombre + ", fabricante=" + fabricante + ", estado=" + estado + '}';
     }
     public abstract void despegar();
-    
+ 
+    public void validar (String estado) throws miExcepcion{
+        if (!this.getEstado().equals("Estacionado")|| !this.getEstado().equals("Preparado")){
+            System.out.println("El avion tiene que estar estacionado");
+        }
+    }
 }
+

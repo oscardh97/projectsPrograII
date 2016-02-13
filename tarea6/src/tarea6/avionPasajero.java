@@ -57,4 +57,11 @@ public class avionPasajero extends avion{
             masPasajeros = lector.next().toUpperCase().equals("S");
         }while( masPasajeros );
     }
+    public void validar (){
+        for (pasajero t : pasajeros) { 
+        if (t.getPeso() > this.getMaxPeso()){
+            System.out.println("Tiene que dejar un minimo de 50 libras");
+        }
+        }
+    }
 }
