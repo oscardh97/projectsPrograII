@@ -14,6 +14,12 @@ import java.util.ArrayList;
 public class Tarea6 {
     public static ArrayList< arma > armasSistema = new ArrayList();
     public static ArrayList< pasajero > pasajerosSistema = new ArrayList();
+
+    public static ArrayList< cargamento > cargamentosSistema = new ArrayList();
+    /**
+     * @param args the command line arguments
+     */
+
     public static void main(String[] args) {
     }
     
